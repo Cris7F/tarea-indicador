@@ -1,12 +1,27 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trabajo</title>
-</head>
-<body>
-    
-</body>
+<html>
+  <head>
+    <title>Indicadores Economicos</title>
+    <script
+      type="text/JavaScript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.js"
+    ></script>
+    <style>
+      div {
+        border: solid 1px #ccc;
+        padding: 10px;
+        font-family: "Segoe UI", Arial, sans-serif;
+        width: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <div style="font-size: 25px" id="todaysdate"></div>
+    <script type="text/JavaScript">
+        /* Aca se pasa la url para obtener datos desde alguna API*/
+              axios.get('https://mindicador.cl/api').then(resp => {
+              var a = resp.data;
+            document.getElementById("todaysdate").innerHTML = a;
+      });
+    </script>
+  </body>
 </html>
