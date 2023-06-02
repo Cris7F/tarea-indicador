@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>Indicadores Economicos</title>
 
@@ -15,15 +16,46 @@
     background-position: center;
     background-repeat: repeat;
   }
+
+  h2 {
+    font-size: 1.5em;
+    color: aliceblue;
+  }
+
+  .clase-interna {
+    display: flex;
+  }
 </style>
+
 <body class="custom-bg">
   <div class="container">
     <br>
     <h1 class="text-white text-center mx-auto">Indicadores Economicos</h1>
     <br>
-    <select id="indicadores" class="form-control">
-      <option value="">Seleccione un indicador</option>
-    </select>
+    <h2>Seleccione su indicador a buscar</h2>
+    <br>
+    <div class="clase-interna">
+      
+      <div style="margin-right: 3.5em;">
+        <select id="indicadores" class="form-control">
+          <option value="">Seleccione una moneda</option>
+        </select>
+      </div>
+
+      <div style="margin-right: 3.5em;">
+        <select id="indicadores" class="form-control">
+          <option value="">Año</option>
+        </select>
+      </div>
+
+      <div style="margin-right: 3.5em;">
+        <input type="date" id="start" name="trip-start" value="2018-07-22" min="2018-01-01" max="2023-06-02">
+      </div>
+      <div style="margin-right: 3.5em;">
+        <button>Buscar</button>
+      </div>
+    </div>
+
     <div id="indicador-info" class="mt-4 text-white"></div>
     <canvas id="indicador-chart" class="mt-4 bg-white text-dark"></canvas>
     <table id="indicador-table" class="table table-light mt-4 border border-primary">
@@ -39,6 +71,5 @@
   </div>
   <script src="script.js"></script>
 </body>
+
 </html>
-
-
