@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Indicadores Economicos</title>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+</head>
+<style>
+  .custom-bg {
+    background-image: url(fondopagina.jpg);
+    background-size: 90% auto;
+    background-position: center;
+    background-repeat: repeat;
+  }
+</style>
+<body class="custom-bg">
+  <div class="container">
+    <br>
+    <h1 class="text-white text-center mx-auto">Indicadores Economicos</h1>
+    <br>
+    <select id="indicadores" class="form-control">
+      <option value="">Seleccione un indicador</option>
+    </select>
+    <div id="indicador-info" class="mt-4 text-white"></div>
+    <canvas id="indicador-chart" class="mt-4 bg-white text-dark"></canvas>
+    <table id="indicador-table" class="table table-light mt-4 border border-primary">
+      <thead>
+        <tr>
+          <th>Fecha</th>
+          <th>Valor</th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+
+
