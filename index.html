@@ -1,75 +1,75 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-  <title>Indicadores Economicos</title>
+ <title>Indicadores Económicos</title>
 
-  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+ <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
 </head>
 <style>
-  .custom-bg {
-    background-image: url(fondopagina.jpg);
-    background-size: 90% auto;
-    background-position: center;
-    background-repeat: repeat;
-  }
-
-  h2 {
-    font-size: 1.5em;
-    color: aliceblue;
-  }
-
-  .clase-interna {
-    display: flex;
-  }
+ .custom-bg {
+ background-image: url(fondopagina.jpg);
+ background-size: 90% auto;
+ background-position: center;
+ background-repeat: repeat;
+ }
 </style>
-
 <body class="custom-bg">
-  <div class="container">
-    <br>
-    <h1 class="text-white text-center mx-auto">Indicadores Economicos</h1>
-    <br>
-    <h2>Seleccione su indicador a buscar</h2>
-    <br>
-    <div class="clase-interna">
-      
-      <div style="margin-right: 3.5em;">
-        <select id="indicadores" class="form-control">
-          <option value="">Seleccione una moneda</option>
-        </select>
-      </div>
-
-      <div style="margin-right: 3.5em;">
-        <select id="indicadores" class="form-control">
-          <option value="">Año</option>
-        </select>
-      </div>
-
-      <div style="margin-right: 3.5em;">
-        <input type="date" id="start" name="trip-start" value="2018-07-22" min="2018-01-01" max="2023-06-02">
-      </div>
-      <div style="margin-right: 3.5em;">
-        <button>Buscar</button>
-      </div>
-    </div>
-
-    <div id="indicador-info" class="mt-4 text-white"></div>
-    <canvas id="indicador-chart" class="mt-4 bg-white text-dark"></canvas>
-    <table id="indicador-table" class="table table-light mt-4 border border-primary">
-      <thead>
-        <tr>
-          <th>Fecha</th>
-          <th>Valor</th>
-        </tr>
-      </thead>
-      <tbody>
-      </tbody>
-    </table>
+ <div class="container">
+ <br>
+ <h1 class="text-white text-center mx-auto">Indicadores Economicos</h1>
+ <br>
+ <h2 class="text-white">Seleccione un indicador</h2>
+ <br>
+ <div class="row">
+  <div class="col-md-3">
+   <select id="indicadores" class="form-control">
+    <option value="">Seleccione una moneda</option>
+   </select>
   </div>
-  <script src="script.js"></script>
+  <div class="col-md-3">
+   <select id="anios" class="form-control">
+    <option value="">Year</option>
+    
+    <option value="2023">2023</option>
+    <option value="2022">2022</option>
+    <option value="2021">2021</option>
+    <option value="2020">2020</option>
+    <option value="2019">2019</option>
+    <option value="2018">2018</option>
+    <option value="2017">2017</option>
+    <option value="2016">2016</option>
+    <option value="2015">2015</option>
+    <option value="2014">2014</option>
+    <option value="2013">2013</option>
+    <option value="2012">2012</option>
+    <option value="2011">2011</option>
+    <option value="2010">2010</option>
+   </select>
+  </div>
+  <div class="col-md-3">
+   <input type="date" id="fecha" class="form-control">
+  </div>
+  <div class="col-md-3">
+   <button id="buscar" class="btn btn-primary">Buscar</button>
+  </div>
+ </div>
+ 
+ <div id="indicador-info" class="mt-4 text-white"></div>
+ <canvas id="indicador-chart" class="mt-4 bg-white text-dark"></canvas>
+ <table id="indicador-table" class="table table-light mt-4 border border-primary">
+ <thead>
+ <tr>
+ <th>Fecha</th>
+ <th>Valor</th>
+ </tr>
+ </thead>
+ <tbody>
+ </tbody>
+ </table>
+ </div>
+ <script src="script.js"></script>
 </body>
-
 </html>
