@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExploraKids</title>
+    <link rel="stylesheet" href="css/styles3.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <header>
+        <h1 style="font-family: Comic Sans MS;">ExploraKids</h1>
+        <p style="font-family: Comic Sans MS;">¡Aprender es divertido!</p>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#about">Inicio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#services">Servicios <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="about" class="jumbotron jumbotron-fluid">
+        <div class="row">
+            <div class="col-md-6 text-center">
+                <img src="imagenes/LOGO.png" alt="Logo de ExploraKids" class="img-fluid" width="50%" height="50px">
+            </div>
+            <div class="col-md-6">
+                <h2 class="text-danger" style="font-family: Comic Sans MS;">Bienvenidos a ExploraKids</h2>
+                <p style="font-family: Comic Sans MS;">ExploraKids es una plataforma educativa personalizada para niños de preescolar, diseñada para que aprender sea divertido, fácil y adaptado a cada niño. Acompáñanos y descubre un mundo lleno de juegos, actividades y lecciones.</p>
+                <a href="#actividades" class="btn btn-success mt-3" style="font-family: Comic Sans MS;">Explorar Actividades</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="actividades" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center text-info mb-4" style="font-family: Comic Sans MS;">Nuestras Actividades</h2>
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <div class="card p-3">
+                        <h3 class="text-warning" style="font-family: Comic Sans MS;">Matemáticas</h3>
+                        <p style="font-family: Comic Sans MS;">Aprende números y formas con juegos interactivos y actividades divertidas.</p>
+                        <button onclick="location.href='juegoMate.html'" class="btn btn-primary mt-3" style="font-family: Comic Sans MS;">Jugar Matemáticas</button>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="card p-3">
+                        <h3 class="text-primary" style="font-family: Comic Sans MS;">Lectura</h3>
+                        <p style="font-family: Comic Sans MS;">Disfruta de cuentos y actividades que te ayudarán a mejorar tu lectura.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="card p-3">
+                        <h3 class="text-success" style="font-family: Comic Sans MS;">Habilidades Creativas</h3>
+                        <p style="font-family: Comic Sans MS;">Juegos y lecciones para aprender sobre la creatividad.</p>
+                        <button class="btn btn-primary mt-2" onclick="location.href='juegoColor.html'">Juego de Colores</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2 style="font-family: Comic Sans MS;">Nuestras Funcionalidades</h2>
+        <div class="features">
+            <div class="feature">
+                <h3 style="color: rgb(229, 255, 0); font-family: Comic Sans MS;">Interfaz Amigable</h3>
+                <p style="color: white; font-family: Comic Sans MS;">Diseñada para que los niños naveguen fácilmente y aprendan jugando.</p>
+            </div>
+            <div class="feature">
+                <h3 style="color: purple; font-family: Comic Sans MS;">Aprendizaje Personalizado</h3>
+                <p style="color: white; font-family: Comic Sans MS;">La plataforma se adapta al ritmo de cada niño, brindando contenido único para su aprendizaje.</p>
+            </div>
+            <div class="feature">
+                <h3 style="color: rgb(255, 0, 106);  font-family: Comic Sans MS;">Seguimiento para Padres</h3>
+                <p style="color: white; font-family: Comic Sans MS;">Los padres y educadores pueden monitorear el progreso del niño a través de reportes detallados.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 ExploraKids. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
